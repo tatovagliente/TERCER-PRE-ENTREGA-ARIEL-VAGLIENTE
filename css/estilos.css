@@ -79,7 +79,7 @@ main {
   }
 }
 
-.somos, .noso, .desprod {
+.somos, .noso, .desprod, .desserv {
   color: #fff;
   width: 90%;
   border: 5px solid rgb(119, 108, 104);
@@ -161,19 +161,8 @@ h1 {
 }
 
 /* FIN PRODUCTOS */
-/* INICIA SERVICIOS */
-.contenedorServicios {
-  margin: 10px;
-  border: 4px solid #333;
-  border-radius: 10px;
-  width: 50%;
-  height: 50%;
-}
-
-.imgServicios {
-  display: block;
-  width: 100%;
-  height: auto;
+.botonsol {
+  margin-top: 10px;
 }
 
 /* FIN SERVICIOS */
