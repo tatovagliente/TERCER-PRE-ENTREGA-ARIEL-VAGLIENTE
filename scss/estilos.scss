@@ -60,6 +60,7 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 
 .jumbotron {
@@ -224,8 +225,6 @@ footer{
     font-size: 20px;
     background-color: black;
     color: #fff;
-    margin: 20px;
-    padding: 20px;
     border-top: 1px solid black;
     text-align: center;
 }
@@ -243,7 +242,7 @@ footer{
     background-color: darkorange;
     position: fixed;
     bottom: 40px;
-    right: 40px;
+    right: 20px;
     border-radius: 50%;
     text-align: center;
     color: #fff;
@@ -252,5 +251,4 @@ footer{
     box-shadow: 0 0 5px 3px #fff;
 }
 /* FIN FOOTER y REDES */
-
 
