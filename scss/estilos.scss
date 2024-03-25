@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+@mixin ancla{
+    text-align: center;
+    text-decoration: underline;
+}
+
+$color1:#fff;
+$color2:rgb(40, 46, 40);
+$color3: blue;
+
 *{
     margin: 0;
     padding: 0;
@@ -67,7 +76,7 @@ main{
     background-image: url(../img/jumbotronimg.jpg);
     background-size: cover;
     background-position: center;
-    color: blue;
+    color: $color3;
     text-align: center;
     font-size: 40px;
     font-weight: bolder;
@@ -83,7 +92,7 @@ main{
 }
 
 .somos, .noso, .desprod, .desserv{
-    color: #fff;
+    color:$color1;
     width: 90%;
     border: 5px solid rgb(119, 108, 104);
     border-radius: 10px;
@@ -99,7 +108,7 @@ main{
 .somos a{
     background-color: rgb(119, 108, 104);
     padding: 10px 20px;
-    color: rgb(40, 46, 40);
+    color: $color2;
     border-radius: 20px;
     text-decoration: none;
 }
@@ -111,9 +120,8 @@ main{
 }
 
 h1{
-    text-align: center;
-    text-decoration: underline;
-    margin-bottom: 20px;
+@include ancla;
+margin-bottom: 20px;
 }
 
 /* Inicia mapa */
@@ -150,8 +158,7 @@ h1{
 }
 
 .row h3{
-    text-align: center;
-    text-decoration: underline;
+@include ancla;
     margin-bottom: 15px;
 }
 
@@ -194,7 +201,7 @@ input [type=text], textarea {
 
 .botonEnviar{
     background-color: #333;
-    color: #fff;
+    color: $color1;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
