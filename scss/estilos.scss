@@ -5,15 +5,27 @@
     text-decoration: underline;
 }
 
+@mixin contemad {
+    color:$color1;
+    width: 90%;
+    border: 5px solid rgb(119, 108, 104);
+    border-radius: 10px;
+    background-color: rgba(63, 60, 60, 0.705);
+    padding: 15px;
+}
+
 $color1:#fff;
 $color2:rgb(40, 46, 40);
 $color3: blue;
+
+$font1: "Roboto", sans-serif;
+$font2: "Helvetica";
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
+    font-family: $font1;
 
 }
 
@@ -92,12 +104,7 @@ main{
 }
 
 .somos, .noso, .desprod, .desserv{
-    color:$color1;
-    width: 90%;
-    border: 5px solid rgb(119, 108, 104);
-    border-radius: 10px;
-    background-color: rgba(63, 60, 60, 0.705);
-    padding: 15px;
+@include contemad;
 }
 
 .somos p{
@@ -122,6 +129,7 @@ main{
 h1{
 @include ancla;
 margin-bottom: 20px;
+font-family:  $font2;
 }
 
 /* Inicia mapa */
@@ -219,7 +227,7 @@ footer p{
 footer{
     font-size: 20px;
     background-color: black;
-    color: #fff;
+    color: $color1;
     border-top: 1px solid black;
     text-align: center;
 }
